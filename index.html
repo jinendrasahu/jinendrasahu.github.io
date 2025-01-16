@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Abdul IT Service</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <div id="myModal" class="modal">
+    
+
+    <div class="modal-content" id="modal-content-t">
+      <div class="m-head"><span class="close" onclick="goBack()"><i class="bi bi-arrow-left-circle-fill"></i></span><p id="m-heading"></p></div>
+      <div id="blogg">
+        <iframe class="container"  src="https://jinendrasahu.blogspot.com" style="height: 100%;width: 100%;"></iframe>
+
+      </div>
+      <ul id="service-list"></ul>
+    </div>
+  
+  </div>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Abdul IT Service</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#"  onclick="showService(0)">blogs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="company-badge mb-4">
+                <i class="bi bi-gear-fill me-2"></i>
+                Contact Us Today for a Free Consultation
+              </div>
+
+              <h1 class="mb-4">
+                Empowering Your Business Through Innovative
+                <span class="accent-text">IT Solutions</span>
+              </h1>
+
+              <p class="mb-4 mb-md-5">
+                Streamline operations, enhance security, and drive growth with our comprehensive Managed IT Services.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Call Us</a>
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                  <i class="bi bi-play-circle me-1"></i>
+                  Play Video
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid">
+
+              <div class="customers-badge">
+                <div class="customer-avatars">
+                  <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
+                  <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
+                  <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
+                  <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
+                  <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
+                  <span class="avatar more">12+</span>
+                </div>
+                <p class="mb-0 mt-2">56+ Customers are already happy with our services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <div class="stat-content">
+                <h4>3x Won Awards</h4>
+                <p class="mb-0">Vestibulum ante ipsum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <div class="stat-content">
+                <h4>6.5k Faucibus</h4>
+                <p class="mb-0">Nullam quis ante</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div class="stat-content">
+                <h4>80k Mauris</h4>
+                <p class="mb-0">Etiam sit amet orci</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <div class="stat-content">
+                <h4>6x Phasellus</h4>
+                <p class="mb-0">Vestibulum ante ipsum</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+
+    </section>
+
+       <!-- Services Section -->
+       <section id="services" class="services section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>We provide a comprehensive suite of services to help you streamline operations, enhance security, and drive growth.
+
+
+          </p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row g-4">
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <div>
+                  <h3>Hardware Sales and Solutions</h3>
+                  <p>Providing a wide range of computers, laptops, and gaming systems with expert support.</p>
+                  <a href="#" class="read-more" onclick="showService(1)">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Card -->
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <div>
+                  <h3>Networking and Infrastructure</h3>
+                  <p>Designing and implementing robust network solutions to keep your business connected and secure.</p>
+                  <a href="#" class="read-more" onclick="showService(2)">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Card -->
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <div>
+                  <h3>IT Strategy and Consulting</h3>
+                  <p>Offering expert guidance to optimize your IT infrastructure and align technology with your business goals.</p>
+                  <a href="#" class="read-more" onclick="showService(3)">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Card -->
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-clipboard-data"></i>
+                </div>
+                <div>
+                  <h3>Software Development and SaaS Solutions</h3>
+                  <p>Creating custom software and developing innovative SaaS applications to meet your specific needs.</p>
+                  <a href="#" class="read-more" onclick="showService(4)">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Card -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-cloud"></i>
+                </div>
+                <div>
+                  <h3>Cloud and DevOps</h3>
+                  <p>Leveraging the power of cloud computing and implementing agile DevOps practices for faster and more reliable software delivery.</p>
+                  <a href="#" class="read-more" onclick="showService(5)">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Card -->
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-shield-lock"></i>
+                </div>
+                <div>
+                  <h3>Cybersecurity Solutions</h3>
+                  <p>Protecting your business from cyber threats with comprehensive security measures and expert guidance.</p>
+                  <a href="#" class="read-more" onclick="showService(6)">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Service Card -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">MORE ABOUT US</span>
+            <h2 class="about-title">Who We Are</h2>
+            <p class="about-description">we are passionate about helping businesses of all sizes thrive in the digital age. As a leading provider of Managed IT Services, we offer a comprehensive suite of solutions designed to streamline operations, enhance security, and drive growth.</p>
+           <b> Our Mission:</b><br> To empower businesses with cutting-edge technology and expert support, enabling them to achieve their full potential.
+
+           <br>
+           <br>
+
+            <div class="row feature-list-wrapper">
+              
+              <div class="col-md-12">
+                <b>Our Values:</b><br><br>
+                <ul class="feature-list">
+                  
+                  <li><i class="bi bi-check-circle-fill"></i> <b> Customer Focus:</b> We prioritize understanding your unique needs and delivering tailored solutions that exceed your expectations.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <b> Innovation:</b> We embrace the latest technologies and continuously explore new ways to improve efficiency and enhance your business.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <b> Integrity:</b> We conduct our business with honesty, transparency, and a commitment to ethical practices.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <b> Excellence:</b> We strive for excellence in all aspects of our work, from service delivery to customer support.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- <div class="info-wrapper">
+              <div class="row gy-4">
+                <div class="col-lg-5">
+                  <div class="profile d-flex align-items-center gap-3">
+                    <img src="assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
+                    <div>
+                      <h4 class="profile-name">Mario Smith</h4>
+                      <p class="profile-position">CEO &amp; Founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="contact-info d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                      <p class="contact-label">Call us anytime</p>
+                      <p class="contact-number">+123 456-789</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="assets/img/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="assets/img/about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div>
+              <div class="experience-badge floating">
+                <h3>5+ <span>Years</span></h3>
+                <p>Of experience in IT service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Abdul IT Service</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Malad  West</p>
+            <p>Mumbai 400062</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 99299099023</span></p>
+            <p><strong>Email:</strong> <span>abdul@shaikh.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Hardware Sales and Solutions</a></li>
+            <li><a href="#services">Networking and Infrastructure</a></li>
+            <li><a href="#services">IT Strategy and Consulting</a></li>
+            <li><a href="#services">Software Development and SaaS Solutions</a></li>
+            <li><a href="#services">Cloud and DevOps</a></li>
+            <li><a href="#services">Cybersecurity Solutions</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Abdul IT Service</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
